@@ -1,0 +1,38 @@
+
+
+<!-- ▼表示 -->
+<!-- HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<!-- CSS -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<style type="text/css">
+	p{
+		color: red;
+	}
+	.login_form{
+		margin: 10px auto;
+		display: block;
+	}
+	</style>
+	<!-- /CSS -->
+</head>
+
+<body>
+	<h1>課題01</h1>
+	<form action="login.php" method="POST">
+		<div class="login_form">
+			<label>ID</label><input type="text" name="id">
+		</div>
+		<div class="login_form">
+			<labek>パスワード</label><input type="password" name="password">
+		</div>
+		<button type="submit">ログイン</button>
+	</form>
+	<p><?php echo $error_msg; ?></p>
+</body>
+</html>
+<!-- ▲表示 -->
